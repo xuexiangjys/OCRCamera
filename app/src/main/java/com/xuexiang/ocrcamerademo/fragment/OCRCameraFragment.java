@@ -219,9 +219,11 @@ public class OCRCameraFragment extends BaseFragment {
             return;
         }
         mCameraView.postDelayed(() -> {
-            final MaskView maskView = (MaskView) mCameraView.getMaskView();
-            maskView.setMaskSize(-1, -1);
-            mCameraView.setMaskView(maskView);
+            if (mCameraView != null) {
+                final MaskView maskView = (MaskView) mCameraView.getMaskView();
+                maskView.setMaskSize(-1, -1);
+                mCameraView.setMaskView(maskView);
+            }
         }, 100);
 
     }
