@@ -103,15 +103,14 @@ dependencies {
     implementation deps.rxjava2
     implementation deps.rxandroid
     implementation deps.rxbinding
-    implementation 'com.github.xuexiangjys:RxUtil2:1.2.0'
+    implementation 'com.github.xuexiangjys:RxUtil2:1.2.1'
 
     implementation deps.androidx.multidex
     //屏幕适配AutoSize
     implementation 'me.jessyan:autosize:1.1.2'
     //umeng统计
-    implementation 'com.umeng.umsdk:analytics:8.0.2'
-    implementation 'com.umeng.umsdk:common:2.0.2'
-
+    implementation 'com.umeng.umsdk:common:9.3.8'
+    implementation  'com.umeng.umsdk:asms:1.2.1'
     //美团多渠道打包
     implementation 'com.meituan.android.walle:library:1.1.6'
 }
